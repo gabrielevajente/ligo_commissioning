@@ -1,0 +1,110 @@
+   USER Edittable Files
+
+        Run_Exc_Batch.m                  top level program for running the excitations
+                                                   needs to define 
+                                                           the data structre batchInfo which stores the run time parameters for later anaylsis
+                                                           a list of excitation channels
+
+                                                  optional
+                                                         SYSTEM   = 'BSC-ISI';   - used to define SYSTEM operations that need to be preformed every loop (inside of Run_TF_Exc)
+                                                                                          currently defaults to BSC-ISI
+
+                                                  calls  run parameters files  (ex  batchInfo = RunB_M2M_20_200Hz(1,batchInfo,'',1)
+
+                                                
+
+   parameters file                         keep as a sperate file to make saving the exciation parameters more robust
+                                                 needs to define 
+                                                                   file_description
+                                                           the exication parameters
+                                                                    fRes = 0.25;  
+								    fMin = 20;
+								    fMax = 200;
+								    Nreps = 2;    
+                                                                    exc_rate  = 4096; 
+                                                                    exc_scale(1:6) = [250 250 250 250 250 250]*1.5;     Drive amplitude
+
+                                                           optional
+                                                                resp_channel_list                list of channels to analysis
+                                                                resp_range             level (in counts) at which the reponse channel saturates            
+                                                                                             needs to be defined if channel list is defined
+                                                                shaping_filter        either a filter or vector that defines a non-uniform amplitude of the drive frequencies
+                                                                                           should be normalized to one in some way that makes sense
+
+
+
+  Mostly Not User Edittable
+
+         Run_TF_Exc.m
+                                                        Does channel formating  (adds _DAQ)
+                                                        creates param data stucture
+                                                        saves batchInfo onto batch_files.mat
+                                                        calls get_comb_timeseries to get excitation times series
+                                                       loops over all exciation channels
+                                                           runs system specific operations (ex. saturation counter)
+                                                           calls comb_TF_exc.m to run excitation
+                 
+
+         comb_TF_exc .m            calls awgstream to set exciation, 
+                                             stores excitation time in param
+
+         get_comb_timerseries.m          creates exciation signal, with optional non-uniform excitation  get_comb_timeseries(fs, fRes, Nrep, fMin, fMax, zpk(-2*pi*1,-2*pi*10,1))
+                                                      calls compute_TF to calcualte transfer functions   
+
+
+
+  USER Edittable Files
+
+        Run_Get_Batch.m                  top level program for analysing the excitations
+                                                   needs to define 
+                                                           the where to find the data structure batchInfo which stores the run time parameters  
+                                                  optional
+                                                           a list of response channels, if the channels are not defined in the parameter file, then they must be defined here
+
+                                                  
+                                                  calls  loadwWthRetry(load_file) until batchInfo has been updated
+                                                  defaults to batch_files which contains the most recent (current) data parameters
+                                                 calls Run_TF_get to anaylize the data
+
+  Not User Edittable
+
+         Run_TF_get.m       
+                                              loops over all exciations in current parameter set
+                                              calls comb_TF_get.m to anaylize data
+
+comb_TF_get.m
+
+                                             calls get_long_comb_TF.m
+
+get_long_comb_TF.m           
+                                          loops over all response channels
+                                          calls get_raw_data  to read data (exciation and response) from framebuilder  (sub function)
+                                          does some (simple) data checking
+                                          calls Compute_TF.m
+
+Compute_TF_.m                  (sub function my_detrend.m)
+
+                                         if drive_rate not equal to sensor rate downsamples drive date
+                                         calculated TF, COH, RMS, MAX, MIN, MEAN, returns data structure result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     subfunctions
+         get_long_comb_TF.m            get_raw_data.m                         
+         compute_TF.m                   my_detrend.m
+       
+ 

@@ -1,0 +1,7 @@
+Scripts Versions:
+Creating Versions of scripts allows us to always keep a working copy of the scripts. When the scripts are working, they must be zipped and a date stamp must be added. Example: Schroeder_Phase_Scripts_Version_1_2012_05_08.zip.
+Before committing any changes to the scripts to SVN, DON'T FORGET TO WARN YOUR COLLEAGUES!
+
+Version 1 - Made on May 15, 2012: Working at LHO - ZIP file made May 8, 2012
+Version 2 - Made on May 15, 2012:
+

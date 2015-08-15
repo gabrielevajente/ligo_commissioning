@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/45799/trunk/DttData
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/44939/trunk/DttData/README
+END
+dttxml_parse_sync.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/44938/trunk/DttData/dttxml_parse_sync.m
+END
+dttxml_read_until.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/44986/trunk/DttData/dttxml_read_until.m
+END
+dttxml_prepare_chan.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/45048/trunk/DttData/dttxml_prepare_chan.m
+END
+dttxml_parse_result.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/45055/trunk/DttData/dttxml_parse_result.m
+END
+DttData.m
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/45799/trunk/DttData/DttData.m
+END
+dttxml_parse_test.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/44938/trunk/DttData/dttxml_parse_test.m
+END
+dttxml_parse_param.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45000/trunk/DttData/dttxml_parse_param.m
+END
+dttxml_get_reference_result_name.m
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/45074/trunk/DttData/dttxml_get_reference_result_name.m
+END
+base64decode.m
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/44968/trunk/DttData/base64decode.m
+END
+dttxml_parse_index.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/45049/trunk/DttData/dttxml_parse_index.m
+END
+dttxml_seek_block.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/44962/trunk/DttData/dttxml_seek_block.m
+END
+dttxml_parse_header.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/44938/trunk/DttData/dttxml_parse_header.m
+END
+dttxml_parse_param_list.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/44938/trunk/DttData/dttxml_parse_param_list.m
+END

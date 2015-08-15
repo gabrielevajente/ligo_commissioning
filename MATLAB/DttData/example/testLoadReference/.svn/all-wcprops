@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/45073/trunk/DttData/example/testLoadReference
+END
+testRef.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/45073/trunk/DttData/example/testLoadReference/testRef.m
+END
+a-pit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/45070/trunk/DttData/example/testLoadReference/a-pit.xml
+END
+fftRefs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/45070/trunk/DttData/example/testLoadReference/fftRefs.xml
+END
+test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/45070/trunk/DttData/example/testLoadReference/test.xml
+END

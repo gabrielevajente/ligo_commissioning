@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/seismic/!svn/ver/7967/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1
+END
+comb_TF_exc.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/comb_TF_exc.m
+END
+comb_TF_get.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/comb_TF_get.m
+END
+get_comb_timeseries.m
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/get_comb_timeseries.m
+END
+gps_now.m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/gps_now.m
+END
+Schroeder_Phase_Scripts_Version_1_2012_05_08.zip
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/seismic/!svn/ver/5007/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/Schroeder_Phase_Scripts_Version_1_2012_05_08.zip
+END
+Run_TF_exc_backup.m
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/Run_TF_exc_backup.m
+END
+configure.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/configure.m
+END
+waitForGPS.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/waitForGPS.m
+END
+get_long_comb_TF.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/seismic/!svn/ver/6565/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/get_long_comb_TF.m
+END
+Run_TF_exc.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/Run_TF_exc.m
+END
+Run_TF_get.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/Run_TF_get.m
+END
+loadWithRetry.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/loadWithRetry.m
+END
+Run_Get_Batch.m
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/seismic/!svn/ver/7967/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/Run_Get_Batch.m
+END
+compute_TF.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/compute_TF.m
+END
+get_long_comp_TF.m
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/get_long_comp_TF.m
+END
+temp.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/temp.m
+END
+checkchn.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/seismic/!svn/ver/5004/Common/MatlabTools/Schroeder_Phase_Scripts/Version_1/checkchn.m
+END

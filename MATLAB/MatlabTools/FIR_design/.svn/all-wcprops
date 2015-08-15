@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/seismic/!svn/ver/5732/Common/MatlabTools/FIR_design
+END
+FIR_figure_blends.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/seismic/!svn/ver/5202/Common/MatlabTools/FIR_design/FIR_figure_blends.pdf
+END
+plot_highpass_filter_paths.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/seismic/!svn/ver/4043/Common/MatlabTools/FIR_design/plot_highpass_filter_paths.pdf
+END
+plot_final_shape_and_performance.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/seismic/!svn/ver/4043/Common/MatlabTools/FIR_design/plot_final_shape_and_performance.pdf
+END
+design_aLIGO_FIR_companion_filters_20120112.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/seismic/!svn/ver/5182/Common/MatlabTools/FIR_design/design_aLIGO_FIR_companion_filters_20120112.m
+END
+make_aLIGO_STS2_calibrated_model.m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/seismic/!svn/ver/4042/Common/MatlabTools/FIR_design/make_aLIGO_STS2_calibrated_model.m
+END
+FIR_Hydr_121603_by4wgain_fixed14.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/seismic/!svn/ver/4042/Common/MatlabTools/FIR_design/FIR_Hydr_121603_by4wgain_fixed14.txt
+END
+FIR_figure_complete_path.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/seismic/!svn/ver/5202/Common/MatlabTools/FIR_design/FIR_figure_complete_path.pdf
+END
+plot_filter_components.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/seismic/!svn/ver/4043/Common/MatlabTools/FIR_design/plot_filter_components.pdf
+END
+design_IIR_bits_aLIGO_FIR_wSTSinv.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/seismic/!svn/ver/5732/Common/MatlabTools/FIR_design/design_IIR_bits_aLIGO_FIR_wSTSinv.m
+END
+plot_module0_VLFHP_STSinversion_AA.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/seismic/!svn/ver/4043/Common/MatlabTools/FIR_design/plot_module0_VLFHP_STSinversion_AA.pdf
+END
+aLIGO_calibrated_STS2_sensor_20120112.mat
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/seismic/!svn/ver/4042/Common/MatlabTools/FIR_design/aLIGO_calibrated_STS2_sensor_20120112.mat
+END
+FIR_Hydr_121603.mat
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/seismic/!svn/ver/4042/Common/MatlabTools/FIR_design/FIR_Hydr_121603.mat
+END
+HPI_2k_FIR_companion_filters_20120530.mat
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/seismic/!svn/ver/5182/Common/MatlabTools/FIR_design/HPI_2k_FIR_companion_filters_20120530.mat
+END
+FIR_figure_FIR_path.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/seismic/!svn/ver/5202/Common/MatlabTools/FIR_design/FIR_figure_FIR_path.pdf
+END
+FIR_figure_performance_estimate.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/seismic/!svn/ver/5202/Common/MatlabTools/FIR_design/FIR_figure_performance_estimate.pdf
+END
+FIR_figure_FIRvsTotal.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/seismic/!svn/ver/5202/Common/MatlabTools/FIR_design/FIR_figure_FIRvsTotal.pdf
+END
+FIR_figure_IIR_path.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/seismic/!svn/ver/5202/Common/MatlabTools/FIR_design/FIR_figure_IIR_path.pdf
+END
+design_IIR_bits_aLIGO_FIR_wSTSinv_may2012.m
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/seismic/!svn/ver/5203/Common/MatlabTools/FIR_design/design_IIR_bits_aLIGO_FIR_wSTSinv_may2012.m
+END
+ISI_4k_FIR_companion_filters_20120119.mat
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/seismic/!svn/ver/4047/Common/MatlabTools/FIR_design/ISI_4k_FIR_companion_filters_20120119.mat
+END
+FIR_figure_module0.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/seismic/!svn/ver/5202/Common/MatlabTools/FIR_design/FIR_figure_module0.pdf
+END

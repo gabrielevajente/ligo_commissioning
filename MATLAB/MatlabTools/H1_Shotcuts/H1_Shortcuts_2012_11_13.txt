@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% SEI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+disp('');
+disp('SEI Path start loading')
+tic 
+warning off
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/Common'))
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/Common/Matlab_Tools/Schroeder_Phase_Scripts/'))
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/Common/Matlab_Tools/Schroeder_Phase_Scripts/Version_1/'))
+addpath(genpath('/ligo/apps/linux-x86_64/awgstream/'))
+warning on
+disp('SEI Path loaded')
+disp('');
+toc
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BSC-ISI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+disp('');
+disp('BSC-ISI path starts loading')
+tic
+warning off
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/HEPI)')
+
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/HAM-ISI'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/HAM-ISI)')
+
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common'))
+disp('addpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common)')
+
+
+%% Control Scripts
+Version='Version_1';
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Loops_Design_Functions_BSC_ISI/'))
+disp('rmpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Loops_Design_Functions_BSC_ISI/))')
+
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Temp/'))
+disp('rmpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Temp/))')
+
+rmpath(genpath(['/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Plot_Functions_BSC_ISI/', Version]))
+disp(['rmpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Plot_Functions_BSC_ISI/', Version])
+
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Control_Generic_Scripts_BSC_ISI/'))
+disp('rmpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Control_Generic_Scripts_BSC_ISI/))')
+
+addpath(genpath(['/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Control_Generic_Scripts_BSC_ISI/', Version ]))
+disp(['addpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Control_Generic_Scripts_BSC_ISI/', Version])
+
+addpath(genpath(['/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Plot_Functions_BSC_ISI/', Version]))
+disp(['addpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Plot_Functions_BSC_ISI/', Version])
+
+%% Testing Functions
+rmpath(genpath(['/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Testing_Functions_BSC_ISI/']))
+disp(['rmpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Testing_Functions_BSC_ISI/'])
+
+addpath(genpath(['/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Testing_Functions_BSC_ISI/', Version]))
+disp(['addpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/Common/Testing_Functions_BSC_ISI/', Version])
+
+%% Chamber
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H2'))
+disp('addpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H2)')
+
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI/X1'))
+disp('addpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/X1)')
+
+rmpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H2/ITMY/Scripts/Data_Collection/OLD')
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H2/ITMY/Scripts/Data_Collection/OLD)')
+
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI/X1/Scripts/'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/X1/Scripts/)')
+
+Chamber={'ETMY'};
+for Counter_1=1:length(Chamber)
+   addpath(genpath(['/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H1/', Chamber{Counter_1}])) ;
+   disp(['addpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H1/', Chamber{Counter_1}]);
+   rmpath(genpath(['/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H1/', Chamber{Counter_1},'/Scripts/Control_Scripts/'])) ;
+   disp(['rmpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H1/', Chamber{Counter_1},'/Scripts/Control_Scripts/']);
+   addpath(genpath(['/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H1/', Chamber{Counter_1},'/Scripts/Control_Scripts/release'])) ;
+   disp(['addpath(genpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI/H1/', Chamber{Counter_1},'/Scripts/Control_Scripts/release']);
+end
+warning on
+
+disp('BSC-ISI path loaded')
+toc
+disp('');
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% HEPI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+disp('');
+disp('HEPI path starts loading')
+tic
+warning off
+%% Removing path (HAM-ISI & BSC-ISI)
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/BSC-ISI'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/BSC-ISI)')
+
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/HAM-ISI'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/HAM-ISI)')
+
+%% Adding the common parts to HEPI
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/Common'))
+disp('addpath(/ligo/svncommon/SeiSVN/seismic/HEPI/Common)')
+
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/H2'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/HEPI/H2)')
+
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/Common/Control_Generic_Scripts_HEPI/'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/HEPI/Common/Control_Generic_Scripts_HEPI/)')
+
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/Common/Control_Generic_Scripts_HEPI/Version_2'))
+disp('addpath(/ligo/svncommon/SeiSVN/seismic/HEPI/Common/Control_Generic_Scripts_HEPI/Version_2)')
+
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/Common/Plot_Functions_HEPI/'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/HEPI/Common/Plot_Functions_HEPI/)')
+
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/Common/Plot_Functions_HEPI/Version_2'))
+disp('addpath(/ligo/svncommon/SeiSVN/seismic/HEPI/Common/Plot_Functions_HEPI/Version_2)')
+
+%% ITMY
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/H2/ITMY/Scripts/Control_Scripts/'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/HEPI/H2/ITMY/Scripts/Control_Scripts/)')
+
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/H2/ITMY/Scripts/Control_Scripts/release'))
+disp('addpath(/ligo/svncommon/SeiSVN/seismic/HEPI/H2/ITMY/Scripts/Control_Scripts/release)')
+
+%% ETMY
+rmpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/H2/ETMY/Scripts/Control_Scripts/'))
+disp('rmpath(/ligo/svncommon/SeiSVN/seismic/HEPI/H2/ETMY/Scripts/Control_Scripts/)')
+
+addpath(genpath('/ligo/svncommon/SeiSVN/seismic/HEPI/H2/ETMY/Scripts/Control_Scripts/release'))
+disp('addpath(/ligo/svncommon/SeiSVN/seismic/HEPI/H2/ETMY/Scripts/Control_Scripts/release)')
+
+
+warning on
+disp('HEPI path loaded')
+disp('');
+toc

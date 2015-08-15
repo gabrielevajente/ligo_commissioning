@@ -1,0 +1,1 @@
+function mat=rotMat(ang)rat=ang/180*pi;mat=[cos(rat) cos(rat+pi/2) 0;     sin(rat) sin(rat+pi/2) 0;      0 	        0       1];   

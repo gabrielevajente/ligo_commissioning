@@ -1,0 +1,14 @@
+DttData - a package for reading LIGO DTT data in matlab
+
+based on DTT_XML by Koji Arai
+
+usage:
+
+data = DttData(filename);
+[f,tf] = data.transferFunction(ch1name,ch2name);
+
+Data extraction methods:
+data.transferFunction(ch1,ch2)
+data.coherence(ch1,ch2)
+data.powerSpectrum(ch1)
+data.timeSeries(ch1)

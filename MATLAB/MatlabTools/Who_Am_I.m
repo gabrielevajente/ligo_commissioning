@@ -1,0 +1,1 @@
+[Workstation_Name]=system(['hostname']);
